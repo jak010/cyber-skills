@@ -1,0 +1,33 @@
+.intel_syntax noprefix
+.bits 32
+	
+.global asm2
+
+; asm(0x7,0x28) -> (ebp, ret(ebp+0x4), 0x7(ebp+0x8), 0x28(ebp+0xc))
+
+asm2:
+	push   	ebp
+	mov    	ebp,esp
+	sub    	esp,0x10  // stack is (ebp-0x4,ebp-0x8,ebp-0xc,ebp-0x10)
+
+	mov    	eax,DWORD PTR [ebp+0xc]   // eax = ebp+0xc (0x28) 
+
+	mov 	DWORD PTR [ebp-0x4],eax  // local1(ebp-0x4) = 0x28 
+
+	mov    	eax,DWORD PTR [ebp+0x8]  // eax == local2(ebp-0x8) == 0x7(ebp+0x8)
+	mov	DWORD PTR [ebp-0x8],eax    //   eax == 0x7 == (ebp-0x8) 
+
+	jmp    	part_b // ebp-0x4 == 0x28  ,ebp-0x8 == 0x7
+
+
+part_a:	
+	add    	DWORD PTR [ebp-0x4],0x1  ebp-0x4 += 0x1 ; local1
+	add	DWORD PTR [ebp+0x8],0x76     ebp+0x8 += 0x76  ; local2 
+
+part_b:	
+	cmp    	DWORD PTR [ebp+0x8],0xa1de  // compare 0x28 , 0xa1de
+	jle    	part_a
+	mov    	eax,DWORD PTR [ebp-0x4]
+	mov	esp,ebp
+	pop	ebp
+	ret

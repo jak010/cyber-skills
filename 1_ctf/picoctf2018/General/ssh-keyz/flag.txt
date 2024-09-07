@@ -1,0 +1,2 @@
+ssh 2018shell4.picoctf.com
+picoCTF{who_n33ds_p4ssw0rds_38dj21}
