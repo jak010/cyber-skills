@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "usecase.md.md",
+                "file": "1_ctf/googleCTF/Work_Computer_sandbox/README.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "usecase.md.md",
+                "file": "1_ctf/googleCTF/Work_Computer_sandbox/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "usecase.md.md",
+                "file": "1_ctf/googleCTF/Work_Computer_sandbox/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "usecase.md.md"
+                "file": "1_ctf/googleCTF/Work_Computer_sandbox/README.md"
               }
             }
           }
@@ -161,7 +161,12 @@
   },
   "active": "ad98f9ae80522981",
   "lastOpenFiles": [
+    "1_ctf/googleCTF/Space-Time-Coordinates/Coordinates_walkthrough.md",
+    "backups.md",
+    "README.md",
+    "usecase.md.md",
     "무제 파일.md",
+    "pcapFiles/flag.png",
     "reference.md.md",
     "2_pentest/tryhackme/brookly_nine_nine.md",
     "2_pentest/tryhackme/agent_t/venv/lib/python3.11/site-packages/pip/_vendor/urllib3/packages/backports/__pycache__/makefile.cpython-311.pyc",
@@ -184,7 +189,6 @@
     "1_ctf/picoctf2018/Forensic/5-Recovering_Form_the_Snap/output/jpg/00003041.jpg",
     "1_ctf/picoctf2018/Forensic/5-Recovering_Form_the_Snap/output/jpg/00002277.jpg",
     "1_ctf/picoctf2018/Forensic/5-Recovering_Form_the_Snap/output/jpg/00001313.jpg",
-    "1_ctf/picoctf2018/Forensic/5-Recovering_Form_the_Snap/output/jpg/00000077.jpg",
     "1_ctf/picoctf2018/Web/mrRobots/readme.md",
     "1_ctf/picoctf2018/Web/TheVault/readme.md",
     "1_ctf/picoctf2018/Web/SearchAgent/readme.md",
@@ -202,10 +206,6 @@
     "1_ctf/picoctf2018/General/strings/readme.md",
     "1_ctf/picoctf2018/General/pipe/readme.md",
     "1_ctf/picoctf2018/General/net_cat/readme.md",
-    "1_ctf/picoctf2018/General/grep2/readme.md",
-    "1_ctf/picoctf2018/General/grep1/readme.md",
-    "1_ctf/picoctf2018/General/absolutely_relative/readme.md",
-    "1_ctf/picoctf2018/General/Aca-Shell-A/readme.md",
-    "1_ctf/picoctf2018/Forensic/WhatsMyName/readme.md"
+    "1_ctf/picoctf2018/General/grep2/readme.md"
   ]
 }
