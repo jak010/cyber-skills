@@ -1,6 +1,15 @@
 # Created by https://www.toptal.com/developers/gitignore/api/venv,macos,python,linux
 # Edit at https://www.toptal.com/developers/gitignore?templates=venv,macos,python,linux
 
+# Created by https://www.toptal.com/developers/gitignore/api/obsidian
+# Edit at https://www.toptal.com/developers/gitignore?templates=obsidian
+
+### Obsidian ###
+# config dir
+.obsidian/
+
+# End of https://www.toptal.com/developers/gitignore/api/obsidian
+
 ### Linux ###
 *~
 
