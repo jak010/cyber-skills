@@ -1,7 +1,9 @@
 ---
 tags:
   - picoCTF
-tech: PHP Object Injection
+tech:
+  - PHP Object Injection
+  - Web
 ---
 
 
