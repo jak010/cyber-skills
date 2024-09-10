@@ -5,8 +5,6 @@ tech:
   - PHP Object Injection
   - Web
 ---
-
-
 # Walk-Through
 
 문제 링크로 접속하면 username과 password 입력 박스가 보인다. 입력 박스를 통해 기본적으로 시도해볼 수 있는 SQL Injection 을 해봤지만 성공하진 않는다.
@@ -149,14 +147,11 @@ if(isset($_COOKIE["login"])){
 cookie.phps를 통해 cookie에 login이라는 key를 통해 무언가 시도해볼 수 있는 것으로 보인다.
 
 # PHP Object Injection
-
 PHP Object injection은 unserialize() 함수에 사용자가 입력한 값을 전달되기 전에 제대로 삭제되지 않은 경우 발생한다고 한다.
 
 PHP는 객체 직렬화를 허용하므로 공격자가 임시로 직렬화된 문자열을 취약한 unserializer() 호출에 전달하여 임의의 PHP 객체를 주입할 수 있다.
 
-이 문제에서는 authentication.php에 정의된 "access_log"의 log_file 변수에 문제에서 힌트로 준 플래그 파일의 경로를 가리키게 해보자.
-
-
+이 문제에서는 authentication.php에 정의된 "access_log"의 log_file 변수에 문제에서 힌트로 준 플래그 파일의 경로를 가리키게 해보자.  
 
 # Payload
 
