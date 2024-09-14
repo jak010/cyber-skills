@@ -1,0 +1,3 @@
+[submodule "tpjt-tistoryuploader-src"]
+	path = tpjt-tistoryuploader-src
+	url = git@github.com:jak010/tpjt-tistoryuploader-src.git
