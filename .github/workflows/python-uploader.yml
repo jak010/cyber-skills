@@ -30,7 +30,7 @@ jobs:
         python -m pip install flake8 pytest
         pip install -r deployment/requirements.txt
     - name: Auto Scheduler
-      env:
+      env: |
         GH_ID : {{ secrets.GH_ID }}
         GH_REPO : {{ secrets.GH_REPO }}
         TSESSION : {{ secrets.TSESSION }}
