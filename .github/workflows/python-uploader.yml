@@ -27,7 +27,6 @@ jobs:
       - name: Install dependencies        
         run: |
           python -m pip install --upgrade pip
-          python -m pip install flake8 pytest
           pip install -r tpjt-tistoryuploader-src/requirements.txt
       
       - name: Auto Scheduler        
