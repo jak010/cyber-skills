@@ -38,5 +38,4 @@ jobs:
           TSESSION: ${{ secrets.TSESSION }}
           TISTORY_BLOG_DOMAIN: ${{ secrets.TISTORY_BLOG_DOMAIN }}
         run: |
-          # stop the build if there are Python syntax errors or undefined names
           python tpjt-tistoryuploader-src/application.py
