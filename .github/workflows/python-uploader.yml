@@ -25,14 +25,11 @@ jobs:
           python-version: ${{ matrix.python-version }}
       
       - name: Install dependencies
-        with:
-          submodules: true        
         run: |
           python -m pip install --upgrade pip
           pip install -r tpjt-tistoryuploader-src/requirements.txt      
+
       - name: Auto Scheduler        
-        with:
-          submodules: true
         env:
           GH_ID: ${{ secrets.GH_ID }}
           GH_REPO: ${{ secrets.GH_REPO }}
