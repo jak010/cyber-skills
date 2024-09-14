@@ -24,10 +24,10 @@ jobs:
       uses: actions/setup-python@v3
       with:
         python-version: ${{ matrix.python-version }}
-        GH_ID : {{ secrets.GH_ID }}
-        GH_REPO : {{ secrets.GH_REPO }}
-        TSESSION : {{ secrets.TSESSION }}
-        TISTORY_BLOG_DOMAIN : {{ secrets.TISTORY_BLOG_DOMAIN }}
+        GH_ID : ${{ secrets.GH_ID }}
+        GH_REPO : ${{ secrets.GH_REPO }}
+        TSESSION : ${{ secrets.TSESSION }}
+        TISTORY_BLOG_DOMAIN : ${{ secrets.TISTORY_BLOG_DOMAIN }}
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
