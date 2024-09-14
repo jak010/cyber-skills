@@ -28,7 +28,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         python -m pip install flake8 pytest
-        pip install -r deployment/requirements.txt
+        pip install -r tpjt-tistoryuploader-src/requirements.txt
     - name: Auto Scheduler
       env:
         GH_ID : ${{ secrets.GH_ID }}
@@ -37,5 +37,5 @@ jobs:
         TISTORY_BLOG_DOMAIN : ${{ secrets.TISTORY_BLOG_DOMAIN }}
       run: |
         # stop the build if there are Python syntax errors or undefined names
-        python deployment/application.py
+        python tpjt-tistoryuploader-src/application.py
         
