@@ -15,22 +15,22 @@ jobs:
         python-version:
           - "3.10"
     steps:
-      - uses: actions/checkout@v4        
+      - uses: actions/checkout@v4   
+        with:
+          submodules: true
+
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v3
         with:
           python-version: ${{ matrix.python-version }}
-          submodules: true
-      - name: Install dependencies
-        with:
-          submodules: true
+      
+      - name: Install dependencies        
         run: |
           python -m pip install --upgrade pip
           python -m pip install flake8 pytest
           pip install -r tpjt-tistoryuploader-src/requirements.txt
+      
       - name: Auto Scheduler        
-        with:
-          submodules: true
         env:
           GH_ID: ${{ secrets.GH_ID }}
           GH_REPO: ${{ secrets.GH_REPO }}
