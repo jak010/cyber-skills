@@ -32,7 +32,6 @@ jobs:
           pip install -r tpjt-tistoryuploader-src/requirements.txt      
 
       - name: Auto Scheduler
-        uses: actions/setup-python@v3        
         env:
           GH_ID: ${{ secrets.GH_ID }}
           GH_REPO: ${{ secrets.GH_REPO }}
