@@ -3,8 +3,9 @@ tags:
   - picoCTF
 tech:
   - PHP Object Injection
-  - Web
 ---
+#web #php #php-object-injection
+
 # Walk-Through
 
 문제 링크로 접속하면 username과 password 입력 박스가 보인다. 입력 박스를 통해 기본적으로 시도해볼 수 있는 SQL Injection 을 해봤지만 성공하진 않는다.

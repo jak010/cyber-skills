@@ -1,3 +1,0 @@
-
-
-# TISTORY ON THE NOTE
