@@ -1,9 +1,13 @@
 ---
 tags:
   - picoCTF
+  - "#web"
+  - "#File-Upload"
+  - "#PNG"
+  - "#php"
 tech:
 ---
-#web  #File-Upload  #PNG #php 
+
 
 # Walk Throught
 
