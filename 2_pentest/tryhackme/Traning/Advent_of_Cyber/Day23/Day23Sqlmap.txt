@@ -1,1 +1,0 @@
-/root/.local/share/sqlmap/output/10.10.141.62/dump/social/users.csv

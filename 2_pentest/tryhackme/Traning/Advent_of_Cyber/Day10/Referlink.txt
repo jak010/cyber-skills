@@ -1,1 +1,0 @@
-https://securityonline.info/exploiting-apache-struts-s2-045-cve-2017-5638-vulnerability-with-metasploit/
