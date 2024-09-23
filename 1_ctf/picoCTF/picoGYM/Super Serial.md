@@ -1,10 +1,13 @@
 ---
 tags:
   - picoCTF
+  - "#web"
+  - php
+  - php-object-injection
 tech:
   - PHP Object Injection
 ---
-#web #php #php-object-injection
+
 
 # Walk-Through
 
