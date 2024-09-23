@@ -8,7 +8,7 @@ on:
     branches:
       - main
 jobs:
-  build:
+  tistory-upload-sch:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -26,11 +26,9 @@ jobs:
           submodules: true
        
       - name: INSTALL PYTHON DEPENDENCIES 
-        with:
-          submodules: true
         run: |
           python -m pip install --upgrade pip
-          pip install -r tpjt-tistoryuploader-src/requirements.txt            
+          pip install -r tpjt-tistoryuploader-src/requirements.txt
       
       - name: SETUP CHROME
         run: |
