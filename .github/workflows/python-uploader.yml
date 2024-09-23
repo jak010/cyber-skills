@@ -57,6 +57,8 @@ jobs:
         env:
           GH_ID: ${{ secrets.GH_ID }}
           GH_REPO: ${{ secrets.GH_REPO }}
+          GH_REPO_TYPE: ${{ secrets.GH_REPO_TYPE }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
           KAKAO_ID: ${{ secrets.KAKAO_ID }}
           KAKAO_PW: ${{ secrets.KAKAO_PW }}          
           TISTORY_BLOG_DOMAIN: ${{ secrets.TISTORY_BLOG_DOMAIN }}
