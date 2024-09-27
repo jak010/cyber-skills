@@ -48,11 +48,11 @@ jobs:
           sudo mv ./chromedriver-linux64/chromedriver /usr/local/bin/
           sudo chmod 777 /usr/local/bin/chromedriver
 
-      - name: SETUP XVFB
-        run: |
-          sudo apt-get install -y xvfb
-          export DISPLAY=:99
-          Xvfb :99 -screen 0 1024x768x24 &
+      # - name: SETUP XVFB
+      #   run: |
+      #     sudo apt-get install -y xvfb
+      #     export DISPLAY=:99
+      #     Xvfb :99 -screen 0 1024x768x24 &
 
       - name: TISTORY UPLOAD PROCESS
         env:
