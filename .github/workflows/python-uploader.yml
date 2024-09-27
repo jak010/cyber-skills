@@ -63,5 +63,6 @@ jobs:
           KAKAO_ID: ${{ secrets.KAKAO_ID }}
           KAKAO_PW: ${{ secrets.KAKAO_PW }}          
           TISTORY_BLOG_DOMAIN: ${{ secrets.TISTORY_BLOG_DOMAIN }}
+          SLACK_WEB_HOOK_URL: ${{ SLACK_WEB_HOOK_URL }}
         run: |
           python tpjt-tistoryuploader-src/application.py
